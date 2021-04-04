@@ -1,5 +1,9 @@
 ---
 ---
+:root {
+  --base: 18px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -13,18 +17,55 @@ a:link, a:visited, a:hover {
 body {
     font-family: Helvetica, sans-serif;
     font-size: 13px;
-    letter-spacing: 0.03em;
-    line-height: 19px;
+    letter-spacing: 0.015em;
+    line-height: var(--base);
 }
 
 header {
-   padding-bottom: 38px;
+    margin-bottom: calc(var(--base) * 2);
+}
+
+p {
+   margin-bottom: var(--base);
+}
+
+img {
+    max-width: 100%;
+}
+
+img + em { 
+    font-family: Courier, monospace;
+    font-style: normal;
 }
 
 main {
-    padding: 16px 19px 19px 19px;
-    max-width: 494px;
+    padding: var(--base);
+    margin-top: -3px;
+    max-width: calc(var(--base) * 23);
 }
 
-ul {
+.dot {
+    display: block;
+    background-color: black;
+    height: 7px;
+    width: 7px;
+    border-radius: 6px;
+    margin-top: 3px;
+    margin-bottom: var(--base);
+}
+
+a.dot:hover {
+    background-color: rgb(255,255,0);
+}
+
+.post {
+    padding-left: calc(var(--base) + 7px);
+}
+
+.post a:link, .post  a:visited {
+    background-color: rgba(255,255,0,.1);
+}
+
+.post a:hover {
+    background-color: rgba(255,255,0,.4);
 }

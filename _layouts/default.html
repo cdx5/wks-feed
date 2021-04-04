@@ -10,10 +10,12 @@
 
 <body>
     <main>
-        <header>
-            {{ site.header }}
-        </header>
-
+        {% if page.url == "/" %}
+            <header>
+                {{site.header }} {{ site.description }}
+            </header>
+        {% endif %}
+        
         {{ content }}
     </main>
 

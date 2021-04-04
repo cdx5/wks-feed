@@ -4,3 +4,26 @@
 
 layout: home
 ---
+Chicago, IL<br>
+willkarmis@gmail.com
+<br><br>
+
+CV
+
+Hendi Dolupta Tioreicatur Autemqui<br> 
+December 2019
+
+Ut Fugit Lanto Blant Volupta Quis<br> 
+August 2019
+
+Hendi Dolupta Tioreicatur Autemqui<br> 
+December 2019
+
+Ut Fugit Lanto Blant Volupta Quis<br> 
+August 2019
+
+Hendi Dolupta Tioreicatur Autemqui<br> 
+December 2019
+
+Ut Fugit Lanto Blant Volupta Quis<br> 
+August 2019
