@@ -2,13 +2,16 @@
 layout: default
 ---
 
-<header>
-    {{ content }}
-</header>
+{% if page.url == "/" %}
+    <div class="intro">
+        {{ content }}
+    </div>
+{% endif %}
 
-{% for post in site.posts %}
-<a href="{{ post.url }}" class="dot"></a>
-<div class="post">
-    {{ post.content }}
-</div>
+{% for post in paginator.posts %}
+    <a href="{{ post.url }}" class="dot"></a>
+    <div class="post">
+        {{ post.content }}
+    </div>
 {% endfor %}
+

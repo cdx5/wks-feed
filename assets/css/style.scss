@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 a:link, a:visited, a:hover {
     color: black;
     text-decoration: none;
@@ -19,9 +23,11 @@ body {
     font-size: 13px;
     letter-spacing: 0.015em;
     line-height: var(--base);
+    display: flex;
+    flex-direction: column;
 }
 
-header {
+header, .intro {
     margin-bottom: calc(var(--base) * 2);
 }
 
@@ -41,17 +47,19 @@ img + em {
 main {
     padding: var(--base);
     margin-top: -3px;
+    margin-bottom: calc(var(--base) * 2);
+    flex: 1 0 auto;
     max-width: calc(var(--base) * 23);
 }
 
 .dot {
     display: block;
     background-color: black;
-    height: 7px;
-    width: 7px;
-    border-radius: 6px;
+    height: 9px;
+    width: 9px;
+    border-radius: 9px;
     margin-top: 3px;
-    margin-bottom: var(--base);
+    margin-bottom: calc(var(--base) * 2);
 }
 
 a.dot:hover {
@@ -59,13 +67,32 @@ a.dot:hover {
 }
 
 .post {
-    padding-left: calc(var(--base) + 7px);
+    padding-left: calc(var(--base) + 9px);
+    padding-bottom: var(--base);
 }
 
 .post a:link, .post  a:visited {
     background-color: rgba(255,255,0,.1);
+    word-wrap: break-word;
 }
 
 .post a:hover {
     background-color: rgba(255,255,0,.4);
+}
+
+.pagination {
+    color: rgba(0,0,0,.30);
+    padding-right: var(--base);
+    padding-bottom: var(--base);
+    padding-left: var(--base);
+    flex-shrink: 0;
+    max-width: calc(var(--base) * 23);
+}
+
+.label {
+    margin-right: 3px;
+}
+
+.num {
+    margin-right: 6px;
 }

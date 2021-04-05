@@ -3,4 +3,9 @@ header: Will Karmis
 description: >- 
   is a sound artist that makes sound sometimes with music and guitar while sitting on a computer and think up ways to make sound while also trying to write a family size open for awesomeness I am drinking coffee right now.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://pedantic-stonebraker-819757.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://127.0.0.1:4000" 
+# url: "https://pedantic-stonebraker-819757.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
+plugins:
+  - jekyll-paginate
+paginate: 2
+paginate_path: "/page-:num/"
