@@ -1,7 +1,7 @@
 ---
 ---
 :root {
-  --base: 18px;
+  --base: 24px;
 }
 
 * {
@@ -14,21 +14,31 @@ html, body {
 }
 
 a:link, a:visited, a:hover {
-    color: black;
+    color: inherit;
     text-decoration: none;
 }
 
 body {
-    font-family: Helvetica, sans-serif;
-    font-size: 13px;
-    letter-spacing: 0.015em;
+    font-family: "Times New Roman", 'Times New Roman', Times, serif;
+    font-size: 22px;
+    letter-spacing: 0.01em;
     line-height: var(--base);
+    color: rgb(95,39,37);
     display: flex;
     flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 header, .intro {
+    color: rgb(56, 126, 215);
     margin-bottom: calc(var(--base) * 2);
+}
+
+header a, .intro a {
+    padding-bottom: 1px;
+    background: url(/assets/gfx/underline--01.svg) bottom repeat-x;
+    background-size: auto 3px;
 }
 
 p {
@@ -40,7 +50,8 @@ img {
 }
 
 img + em { 
-    font-family: Courier, monospace;
+    display: block;
+    font-size: 19px;
     font-style: normal;
 }
 
@@ -49,39 +60,46 @@ main {
     margin-top: -3px;
     margin-bottom: calc(var(--base) * 2);
     flex: 1 0 auto;
-    max-width: calc(var(--base) * 23);
+    max-width: calc(var(--base) * 44);
 }
 
 .dot {
     display: block;
-    background-color: black;
-    height: 9px;
-    width: 9px;
-    border-radius: 9px;
+    background: url(/assets/gfx/dot.svg) no-repeat;
+    width: 17px;
+    height: 17px;
     margin-top: 3px;
     margin-bottom: calc(var(--base) * 2);
 }
 
-a.dot:hover {
-    background-color: rgb(255,255,0);
-}
-
 .post {
-    padding-left: calc(var(--base) + 9px);
+    padding-left: calc(var(--base) + 11px);
     padding-bottom: var(--base);
 }
 
+.post h1 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: var(--base);
+    display: inline-block;
+    padding-bottom: 1px;
+    background: url(/assets/gfx/underline--03.svg) bottom repeat-x;
+    background-size: auto 3px;
+}
+
 .post a:link, .post  a:visited {
-    background-color: rgba(255,255,0,.1);
+    padding-bottom: 1px;
+    background: url(/assets/gfx/underline--02.svg) bottom repeat-x;
+    background-size: auto 3px;
     word-wrap: break-word;
 }
 
 .post a:hover {
-    background-color: rgba(255,255,0,.4);
 }
 
 .pagination {
-    color: rgba(0,0,0,.30);
+    // color: rgba(0,0,0,.30);
+    color: rgb(10, 149, 70);
     padding-right: var(--base);
     padding-bottom: var(--base);
     padding-left: var(--base);
@@ -89,10 +107,16 @@ a.dot:hover {
     max-width: calc(var(--base) * 23);
 }
 
+.pagination a {
+    padding-bottom: 1px;
+    background: url(/assets/gfx/underline--04.svg) bottom repeat-x;
+    background-size: auto 3px;
+}
+
 .label {
     margin-right: 3px;
 }
 
-.num {
-    margin-right: 6px;
+.comma {
+    margin-left: -6px;
 }

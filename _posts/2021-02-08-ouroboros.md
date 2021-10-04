@@ -1,8 +1,7 @@
 ---
 layout: post
+header: Ouroboros
 ---
-Ouroboros
-
 ![ouroboros cover](/assets/imgs/ouroboros-cover.png)
 *Here lies an image above me*
 
